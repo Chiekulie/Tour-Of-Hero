@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'learningPhase';
+  title = 'Tour of Heroes';
+
+
+  showHeroForm: boolean = false;
+
+  toggleHeroForm() {
+    this.showHeroForm = !this.showHeroForm;
+  }
+  
 }
